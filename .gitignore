@@ -1,0 +1,4 @@
+*.db
+*.db.tar.gz
+*.files
+*.files.tar.gz
