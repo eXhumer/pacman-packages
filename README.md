@@ -12,6 +12,7 @@ sudo pacman-key --lsign 4E4A2F76EE374FEFA922BA58B79078F74FFDAD52
 ```
 
 ### 2. Add "server" information for repository locally
+**NOTE: This needs to be added to `/etc/pacman.conf` file**
 ```
 [ex-repo]
 Server = https://github.com/eXhumer/pacman-packages/releases/latest/download/
