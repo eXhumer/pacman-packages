@@ -2,3 +2,4 @@
 *.db.tar.gz
 *.files
 *.files.tar.gz
+*.sig
