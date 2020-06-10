@@ -1,0 +1,26 @@
+
+# Maintainer: eXhumer <eXhumer@member.fsf.org>
+pkgname=hacPack
+pkgdesc='Make and repack Nintendo Switch NCAs/NSPs'
+pkgrel=2
+pkgver=1.36
+arch=('x86_64')
+url='https://github.com/The-4n/${pkgname}.git'
+license=('GPLv2')
+makedepends=('gcc' 'make')
+source=("https://github.com/The-4n/${pkgname}/archive/v${pkgver}-r${pkgrel}.tar.gz")
+
+sha256sums=('4c0d48f44831203f2e327ea4150b1220d6e02bdade0e25a9325b6da24dea9b5d')
+sha512sums=('407cd7e03f92a79e30b4978e078cc4fbbd8b7ce1552b237632261a382fff7bbd86f9234956820d3d571c47ea184627226d5c44e1ea6ae137b3f738a6b66722ae')
+
+build() {
+	cd ${pkgname}-${pkgver}-r${pkgrel}
+	cp config.mk.template config.mk
+	make
+}
+
+package() {
+	cd ${pkgname}-${pkgver}-r${pkgrel}
+	[ -d $pkgdir/usr/bin/ ] || mkdir -p $pkgdir/usr/bin/
+	cp hacpack $pkgdir/usr/bin/
+}
