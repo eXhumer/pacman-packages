@@ -3,3 +3,6 @@
 *.files
 *.files.tar.gz
 *.sig
+*.pkg.tar.xz
+src/
+pkg/
