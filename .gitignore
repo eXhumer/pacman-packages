@@ -4,5 +4,6 @@
 *.files.tar.gz
 *.sig
 *.pkg.tar.xz
+*.tar.gz
 src/
 pkg/
