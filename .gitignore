@@ -5,5 +5,6 @@
 *.sig
 *.pkg.tar.xz
 *.tar.gz
+*.tar.gz.old
 src/
 pkg/
