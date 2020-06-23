@@ -1,7 +1,7 @@
 # pacman-packages
 
 ## Packages included with repository currently
-* [`switch-ex-curl`](https://github.com/eXhumer/switch-ex-curl/) - v7.70.0 
+* [`switch-ex-curl`](https://github.com/eXhumer/switch-ex-curl/) - v7.69.2 
 * [`hacPack`](https://github.com/The-4n/hacPack) - v1.36-r2 
 * [`hackBrewPack`](https://github.com/The-4n/hacBrewPack) - v3.05 
 
