@@ -7,7 +7,7 @@
 
 ### 1. Locally import and sign key required for repository
 ```
-sudo pacman-key --recv 13105126BA2E3B99C2923C9A3A1CA61549E890F3
+sudo pacman-key --keyserver keyserver.ubuntu.com --recv-keys 13105126BA2E3B99C2923C9A3A1CA61549E890F3
 sudo pacman-key --lsign 13105126BA2E3B99C2923C9A3A1CA61549E890F3
 ```
 
