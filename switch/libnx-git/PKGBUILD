@@ -1,0 +1,33 @@
+# Maintainer: Anon Ymous <eXhumer@member.fsf.org>
+
+pkgname=('libnx-git')
+pkgver=4.0.0
+pkgrel=1
+pkgdesc="Nintendo Switch AArch64-only userland library."
+arch=('any')
+license=('custom')
+url="http://github.com/switchbrew"
+options=(!strip libtool staticlibs)
+conflicts=('libnx')
+provides=('libnx')
+replaces=('libnx')
+source=(
+  libnx-master.tar.gz::${url}/libnx/archive/master.tar.gz
+)
+sha256sums=(
+  'SKIP'
+)
+makedepends=('devkitA64' 'devkitpro-pkgbuild-helpers' 'general-tools')
+
+groups=('switch-dev')
+
+build() {
+  source /opt/devkitpro/switchvars.sh
+  cd ${srcdir}/libnx-master/nx
+  make
+}
+
+package() {
+  cd ${srcdir}/libnx-master/nx
+  make DESTDIR=$pkgdir install
+}

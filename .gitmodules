@@ -1,3 +1,0 @@
-[submodule "switch/curl"]
-	path = switch/curl
-	url = https://github.com/eXhumer/switch-ex-curl.git
